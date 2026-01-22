@@ -48,7 +48,7 @@
 
 ---
 
-## � Important Tips / Önemli İpuçları
+## ⚠ Important Tips / Önemli İpuçları
 
 > [!WARNING]
 > **Thread Management / Thread Yönetimi:**
