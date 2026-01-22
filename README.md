@@ -57,7 +57,7 @@
 
 ---
 
-## �📂 Project Structure / Proje Yapısı
+## 📂 Project Structure / Proje Yapısı
 - `onlysniper.py`: Main engine / Ana motor.
 - `config.json`: Settings / Ayarlar.
 - `tokens.txt`: Discord tokens / Token listesi.
