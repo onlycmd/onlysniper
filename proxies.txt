@@ -1,0 +1,2 @@
+# Put your proxies here (http://user:pass@ip:port), one per line
+# Leave empty if not using proxies

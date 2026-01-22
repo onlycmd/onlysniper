@@ -1,0 +1,3 @@
+# Put your Discord tokens here, one per line
+TOKEN_1
+TOKEN_2
