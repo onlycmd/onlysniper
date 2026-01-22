@@ -1,0 +1,8 @@
+{
+    "guild_id": "YOUR_GUILD_ID",
+    "target_url": "target-url",
+    "webhook_url": "",
+    "threads": 10,
+    "check_interval": 0.1,
+    "use_proxies": false
+}
