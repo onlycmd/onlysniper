@@ -256,12 +256,14 @@ class OnlySniperElite:
         
         ProfessionalLogger.info(f"Initiating attack on: [bold yellow]{self.target_url}[/bold yellow]")
         
-        tasks = [self.worker(i) for i in range(self.threads)]
+        # Start workers in the background
+        for i in range(self.threads):
+            asyncio.create_task(self.worker(i))
         
         with Live(self.get_status_panel(), refresh_per_second=4) as live:
             while not self.found:
                 live.update(self.get_status_panel())
-                await asyncio.sleep(0.2)
+                await asyncio.sleep(0.25)
         
         ProfessionalLogger.success("Operation complete. Sniper shutting down.")
 
