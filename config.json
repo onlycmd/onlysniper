@@ -4,5 +4,6 @@
     "webhook_url": "",
     "threads": 10,
     "check_interval": 0.1,
-    "use_proxies": false
+    "use_proxies": false,
+    "two_factor_secret": ""
 }

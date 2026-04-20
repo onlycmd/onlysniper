@@ -1,79 +1,85 @@
-# 🎯 OnlySniper - Professional Discord Vanity Sniper
+# 🚀 OnlySniper - Elite Edition (v2.0.0)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen?style=for-the-badge" alt="Maintained">
-</p>
+![License](https://img.shields.io/github/license/onlycmd/onlysniper?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-2.0.0--Elite-magenta?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge)
 
----
-
-## 🇹🇷 Türkçe Açıklama
-
-**OnlySniper**, Discord sunucuları için özel URL'leri (vanity URL) milisaniyeler içinde yakalamak üzere tasarlanmış, yüksek performanslı ve profesyonel bir araçtır.
-
-### ✨ Özellikler
-- **TLS Fingerprinting:** `curl_cffi` kullanarak gerçek bir Chrome 110 tarayıcısı gibi davranır. Cloudflare ve Discord bot korumalarını bypass eder.
-- **Otomatik Token Doğrulama:** Başlangıçta tüm tokenları kontrol eder, geçersiz olanları ayıklar.
-- **Çoklu Token Desteği:** Birden fazla hesap kullanarak rate limit riskini minimize eder.
-- **Asenkron Mimari:** `asyncio` ile en yüksek hızda çalışma.
-- **Webhook Entegrasyonu:** URL alındığında Discord üzerinden anlık bildirim gönderir.
-- **Proxy Desteği:** IP ban riskine karşı proxy rotasyonu.
-
-### 🚀 Kurulum ve Kullanım
-1. Bağımlılıkları kurun: `pip install -r requirements.txt`
-2. `config.json` dosyasını düzenleyin (Hedef URL ve Sunucu ID).
-3. `tokens.txt` dosyasına Discord tokenlarınızı ekleyin.
-4. `start.bat` dosyasına çift tıklayarak başlatın.
+**OnlySniper Elite** is a high-performance, professional Discord Vanity URL sniper designed for speed, stealth, and ease of use. It mimics official Discord clients to minimize detection and maximizes claim success with optimized asynchronous requests.
 
 ---
 
-## 🇺🇸 English Description
+## ✨ Features / Özellikler
 
-**OnlySniper** is a high-performance, professional-grade tool designed to claim Discord vanity URLs within milliseconds.
+### 🌍 English
+- **🚀 Ultra-Fast Claims:** Optimized asynchronous logic for millisecond-level reaction times.
+- **🎨 Rich Terminal UI:** Professional dashboard with live statistics (CPS, Errors, Checks).
+- **🛡️ Stealth Mode:** Advanced TLS fingerprinting that mimics the **Discord Desktop (Electron)** client.
+- **🔑 Auto 2FA Automation:** Automatically generates and submits 2FA codes using `pyotp`.
+- **📦 Smart Dependencies:** Automatically detects and installs missing modules on startup.
+- **📑 Detailed Diagnostics:** Real-time token health checks (MFA status, Validity).
 
-### ✨ Features
-- **TLS Fingerprinting:** Uses `curl_cffi` to impersonate a real Chrome 110 browser. Bypasses Cloudflare and Discord bot protections.
-- **Automatic Token Validation:** Checks all tokens at startup and filters out invalid ones.
-- **Multi-Token Support:** Use multiple accounts to minimize rate limit risks.
-- **Asynchronous Architecture:** Powered by `asyncio` for maximum speed.
-- **Webhook Integration:** Sends instant Discord notifications when a URL is claimed.
-- **Proxy Support:** Proxy rotation to prevent IP bans.
-
-### 🚀 Installation & Usage
-1. Install dependencies: `pip install -r requirements.txt`
-2. Edit `config.json` (Target URL and Guild ID).
-3. Add your Discord tokens to `tokens.txt`.
-4. Double-click `start.bat` to launch.
-
----
-
-## ⚠ Important Tips / Önemli İpuçları
-
-> [!WARNING]
-> **Thread Management / Thread Yönetimi:**
-> - **EN:** Keep the `threads` count in `config.json` balanced with your token count. For 1 token, 5-10 threads are ideal. Too many threads may cause your tokens to get rate-limited or flagged quickly.
-> - **TR:** `config.json` içindeki `threads` sayısını token sayınıza göre dengeli tutun. 1 token için 5-10 thread idealdir. Çok fazla thread kullanmak, tokenlarınızın hızlıca rate limit yemesine veya işaretlenmesine (flag) neden olabilir.
+### 🇹🇷 Türkçe
+- **🚀 Ultra Hızlı:** Milisaniye düzeyinde tepki süresi için optimize edilmiş asenkron mantık.
+- **🎨 Zengin Arayüz:** Canlı istatistikler (CPS, Hata, Sorgu) içeren profesyonel panel.
+- **🛡️ Gizlilik Modu:** **Discord Masaüstü (Electron)** uygulamasını taklit eden gelişmiş TLS parmak izi.
+- **🔑 Otomatik 2FA:** `pyotp` kullanarak 2FA kodlarını otomatik üretir ve gönderir.
+- **📦 Akıllı Bağımlılıklar:** Eksik modülleri açılışta otomatik algılar ve kurar.
+- **📑 Detaylı Analiz:** Token sağlığını (MFA durumu, Geçerlilik) anlık doğrular.
 
 ---
 
-## 📂 Project Structure / Proje Yapısı
-- `onlysniper.py`: Main engine / Ana motor.
-- `config.json`: Settings / Ayarlar.
-- `tokens.txt`: Discord tokens / Token listesi.
-- `proxies.txt`: Proxy list / Proxy listesi.
-- `start.bat`: Easy launcher / Kolay başlatıcı.
+## 🛠️ Configuration / Kurulum (config.json)
+
+```json
+{
+    "guild_id": "YOUR_SERVER_ID",
+    "target_url": "target-vanity",
+    "webhook_url": "YOUR_DISCORD_WEBHOOK",
+    "threads": 10,
+    "check_interval": 0.05,
+    "use_proxies": false,
+    "two_factor_secret": "YOUR_2FA_SECRET_KEY"
+}
+```
 
 ---
 
-## ⭐ Support / Destek
-If you like this project, please consider giving it a **Star** and **Forking** it! Your support helps me improve the tool further.
+## 🚀 Getting Started / Başlangıç
 
-Eğer bu projeyi beğendiyseniz, lütfen bir **Yıldız (Star)** vermeyi ve **Forklamayı** unutmayın! Desteğiniz projeyi geliştirmem için bana motivasyon sağlıyor.
+### Prerequisites
+- Python 3.8 or higher.
+- A valid Discord Token with Manage Server permissions on the target guild.
+
+### Direct Run (Auto-Install)
+Simply run the script. It will automatically ask to install missing dependencies:
+```bash
+python onlysniper.py
+```
+
+### Manual Installation
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 📸 Screenshots / Görseller
+
+*(New V2.0 Dashboard Interface)*
+> [!NOTE]
+> The software features a dynamic LIVE panel showing your real-time performance.
 
 ---
 
 ## ⚠️ Disclaimer / Uyarı
-This tool is for educational purposes only. Using automated tools on Discord may violate their Terms of Service. Use at your own risk.
+This tool is for educational purposes only. Self-botting is against Discord's Terms of Service. Use at your own risk.
 
-Bu araç sadece eğitim amaçlıdır. Discord üzerinde otomatize araçlar kullanmak hizmet şartlarını ihlal edebilir. Tüm sorumluluk kullanıcıya aittir.
+Bu araç sadece eğitim amaçlıdır. Self-bot kullanımı Discord Hizmet Şartları'na aykırıdır. Tüm sorumluluk kullanıcıya aittir.
+
+---
+
+## 🤝 Contributing
+Feel free to open issues or submit pull requests to improve the speed and stealth of OnlySniper!
+
+---
+**Developed with ❤️ by [onlycmd](https://github.com/onlycmd)**

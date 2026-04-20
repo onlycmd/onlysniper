@@ -1,3 +1,4 @@
-httpx
 curl_cffi
+pyotp
+rich
 asyncio
